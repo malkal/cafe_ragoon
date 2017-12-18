@@ -1,0 +1,455 @@
+@charset "utf-8";
+p,h1,h2,h3,figure,ul,li{
+	padding:0;
+	margin:0;
+}
+img{
+	vertical-align:bottom;
+}
+ul li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.font{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:2em;
+	line-height:2em;
+	text-align: center;
+}
+/*ヘッダー*/
+header{
+	width:100px;
+	height:100vh;
+	background-color:#2a0202;
+	position:fixed;
+	top:0;
+	left:auto;
+	}
+header h1 img{
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:20px;
+}
+header nav ul li{
+	margin-top:25px;
+	padding-top:25px;
+	padding-bottom:25px;
+	text-align: center;
+}
+header nav ul li a{
+	font-family: 'Poiret One', cursive;
+	color:#fff;
+	font-size:1.2em;
+}
+/*ホバー設定*/
+a:hover{
+	color:#FF7E00;
+}
+.button:hover{
+  background-color:rgba(255, 255, 255,0.2);
+}
+.button2:hover{
+	background-color:rgba(255, 255, 255,0.2);
+	letter-spacing: 5px;
+}
+.button2,
+.button2::before,
+.button2::after{
+  transition: all 0.2s;
+}
+#infomation a {
+  position: relative;
+  text-decoration:none;
+}
+#infomation a::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  transform: scalex(0);
+  transform-origin:0 100%;
+  background-color: #2a0202;
+  transition: all 0.3s ease;
+}
+#infomation a:hover::after {
+  transform: scaleX(1);
+}
+/*大枠*/
+#wrapper{
+	width:980px;
+	overflow:hidden;
+	margin-right:auto;
+	margin-left:auto;
+}
+#main{
+	margin-left:100px;
+	margin-bottom:50px;
+}
+/*ページイメージ*/
+#head_illustration{
+	position:relative;
+}
+#head_illustration .text_center{
+	font-family: 'Poiret One', cursive;
+	font-size:2.2em;
+	color:#fff;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+#head_illustration .text_rightbottom{
+	font-family: 'Poiret One', cursive;
+	font-size:1em;
+	color:#fff;
+	position:absolute;
+	top:96%;
+	left:83%;
+}
+.head_img{
+	opacity:0.8;
+}
+/*お知らせ*/
+#infomation{
+	margin-top:30px;
+	margin-left:50px;
+}
+#infomation h2{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:2em;
+	line-height:2em;
+}
+#infomation .frame{
+	margin-left:30px;
+	margin-right:30px;
+	width:auto;
+	border:2px solid #2a0202;
+	padding:10px;
+}
+#infomation ul li{
+	font-size:0.9em;
+	margin:10px 0 7px 30px;
+}
+#infomation ul li time{
+	padding-right:70px;
+}
+/*その他*/
+#introduction{
+	overflow:hidden;
+	margin-top:30px;
+	margin-left:50px;
+}
+#introduction h2{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size: 2em;
+	line-height: 1em;
+	padding-left: 3px;
+}
+#introduction .process,
+#introduction .view,
+#introduction .gift{
+	float:left;
+	width:250px;
+	margin-left:20px;
+}
+#introduction h3{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+#introduction figcaption{
+	font-size:0.7em;
+	line-height:2em;
+	margin-top: 7px;
+}
+.thin:hover{
+	opacity:0.8;
+}
+/*About*/
+#about{
+	overflow:hidden;
+	margin-top:30px;
+	margin-left:50px;
+}
+.about_text{
+	float:left;
+	width:430px;
+	margin-top:18px;
+	text-align:center;
+}
+.about_text h2{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:2em;
+	line-height:2em;
+}
+.about_text p{
+	font-size:0.8em;
+	line-height:2em;
+}
+#about figure{
+	float:left;
+	width:325px;
+	margin-left:25px;
+}
+#pictures{
+	position:relative;
+	height:300px;
+	margin-top: 50px;
+	margin-left: 120px;
+}
+#pictures .move1{
+	position:absolute;
+	top:150px;
+	left:200px;
+}
+#pictures .move2{
+	position:absolute;
+	top: 100px;
+	left: 400px;
+}
+/*メニュー*/
+#menu{
+	overflow:hidden;
+}
+#menu h2{
+	text-align:center;
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:2em;
+	line-height:2em;
+	margin-top:15px;
+}
+#menu .cofee{
+	margin-top:20px;
+	margin-left:100px;
+	overflow:hidden;
+}
+#menu .cofee figure{
+	float:left;
+	width:290px;
+	margin-top:33px;
+}
+.cofee table{
+	float:left;
+	width:410px;
+	padding-left:50px;
+}
+#menu table th{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:1.2em;
+	line-height:1.2em;
+	text-align: center;
+}
+.name{
+	width:350px;
+	height:30px;
+	font-size:0.8em;
+}
+.price{
+	width:60px;
+	height: 30px;
+	font-size:0.8em;
+	padding-right: 0;
+}
+.cofee td p,
+.tea td p{
+	font-size:0.8em;
+}
+.tea{
+	overflow:hidden;
+	margin-top:30px;
+	margin-left:100px;
+}
+#menu .tea figure{
+	margin-top:33px;
+	float:right;
+	width:290px;
+	margin-right: 50px;
+}
+.tea table{
+	float:left;
+	width:410px;
+}
+/*景観*/
+#slider{
+	position:relative;
+}
+#slider p{
+	font-size:1em;
+	line-height:3em;
+	color:#fff;
+	writing-mode: vertical-rl;
+	font-weight:lighter;
+	background-color:rgba(255, 255, 255,0.1);
+	padding:10px 10px 30px 10px;
+	position:absolute;
+	top:5%;
+	left:60%;
+}
+.takeout{
+	text-align: center;
+	padding-top: 10px;
+}
+.takeout h2{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:2em;
+	line-height:2em;
+}
+.takeout p{
+	font-size: 0.8em;
+	line-height: 2.5em;
+}
+/*製法*/
+.beans_frame{
+	overflow:hidden;
+	margin-top: 20px;
+	margin-left:100px;
+}
+.beans_frame h2{
+	float:left;
+	width:290px;
+}
+.beans_frame p{
+	float:left;
+	width:280px;
+	text-align: center;
+	font-size: 0.7em;
+	line-height: 2em;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.roast_frame{
+	overflow:hidden;
+	height:300px;
+	margin-top: 40px;
+	margin-left:100px;
+	position:relative;
+}
+.roast_frame h2{
+	float:right;
+	width:290px;
+	margin-right: 120px;
+}
+.tilt_img{
+	position:absolute;
+	top:100px;
+	left:530px;
+	transform: rotate(15deg);
+}
+.roast_frame p{
+	float:left;
+	width:320px;
+	text-align: center;
+	font-size: 0.7em;
+	line-height: 2em;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.drip_frame{
+	position:relative;
+	text-align: center;
+	margin-top: 10px;
+}
+.drip_text{
+	position:absolute;
+	top:20px;
+	left:200px;
+	width:210px;
+	color:#fff;
+	text-align: center;
+}
+.drip_frame h3{
+	font-size: 1.3em;
+	line-height: 2em;
+}
+.drip_frame p{
+	font-size: 0.7em;
+	line-height: 2em;
+}
+/*ギフトページ*/
+.gift_frame{
+	overflow:hidden;
+	margin-top: 20px;
+}
+.gift_frame h3{
+	float:right;
+	width:380px;
+	margin-right: 100px;
+}
+.gift_frame p{
+	float:left;
+	width:200px;
+	text-align: center;
+	writing-mode: vertical-rl;
+	font-size: 0.6em;
+	line-height: 3em;
+	margin-left: 100px;
+	margin-top: 120px;
+}
+.blur{
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+.blur:after{
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    box-shadow: inset 0px 0px 15px 15px #fff;
+    content: " ";
+}
+/*アクセス*/
+#access{
+	overflow:hidden;
+	margin-top:30px;
+	margin-left:50px;
+}
+#access h2{
+	font-family: 'Satisfy', cursive;
+	font-weight:lighter;
+	font-size:2em;
+	line-height:2em;
+}
+#access dl{
+	float:left;
+	width:300px;
+}
+#access h3{
+	float:left;
+	margin-left:50px;
+	width:390px;
+}
+#access dt{
+	width:100px;
+	font-size:0.8em;
+	line-height: 1.3em;
+	background-color:#5C5C5C;
+	color:#fff;
+	text-align: center;
+}
+#access dd{
+	font-size:0.7em;
+	line-height:2em;
+	margin: 0;
+}
+/*フッター*/
+footer{
+	text-align:center;
+	border-top:1px solid #2a0202;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:0.8em;
+	margin-left: 100px;
+}
